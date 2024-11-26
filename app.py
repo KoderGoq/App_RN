@@ -5,7 +5,7 @@ import cv2
 # from PIL import Image
 
 # Cargar el modelo preentrenado
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt')
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt', force_reload=True)
 
 # Configurar la interfaz de Streamlit
 st.title("Detección de Animales")
